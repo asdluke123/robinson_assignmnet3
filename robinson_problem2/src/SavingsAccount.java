@@ -1,6 +1,6 @@
-import java.math.BigDecimal;
+
 public class SavingsAccount {
-	private static double annualIntrestRate;
+	private double annualIntrestRate;
 	private double savingsBalance;
 	private double monthlyBalance;
 
@@ -9,7 +9,7 @@ public class SavingsAccount {
 		annualIntrestRate = IntrestRate;
 		this.savingsBalance = Balance;
 	}
-	public static void modifyIntrestRate(double newIntrest) {annualIntrestRate = newIntrest;}
+	public void modifyIntrestRate(double newIntrest) {annualIntrestRate = newIntrest;}
 	public void calculateMonthlyInterest() {this.savingsBalance+=(this.savingsBalance * annualIntrestRate) /12;}
 	public double getMonthlyBalance() {return this.monthlyBalance;}
 	public double getSavingsBalance() {return this.savingsBalance;}

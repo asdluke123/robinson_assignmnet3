@@ -114,11 +114,6 @@ public int isAnwserCorrect() {
 				if(getUserGuess() == getNum1() - getNum2()) {correct = 1;}
 				break;
 			case 4:
-				if(getNum2() == 0) {
-					System.out.println("ERROR: AUTOMATIC CORRECT ANWSER");
-					correct =1;
-					break;
-				}
 				if(getUserGuess() == roundAnwser(getNum1() / getNum2())) {correct = 1;}
 				break;
 			}

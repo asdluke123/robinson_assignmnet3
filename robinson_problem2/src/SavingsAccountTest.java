@@ -15,7 +15,8 @@ public class SavingsAccountTest {
 			System.out.println("Saver 2");
 			System.out.println(saver2.toString());
 		}
-			SavingsAccount.modifyIntrestRate(0.05);
+			saver1.modifyIntrestRate(0.05);
+			saver2.modifyIntrestRate(0.05);
 			saver1.calculateMonthlyInterest();
 			saver2.calculateMonthlyInterest();
 			System.out.println("Saver1 balance after one month of a 0.5 intrest change\n " + saver1.toString());
